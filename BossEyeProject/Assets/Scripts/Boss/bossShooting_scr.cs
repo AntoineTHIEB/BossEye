@@ -14,9 +14,7 @@ public class bossShooting_scr : MonoBehaviour
     public float fireRateBoss;
     private float currentRate;
 
-    public float bulletSpeedMax;
-    public float bulletSpeedMin;
-    public AnimationCurve bulletSpeedCurve;
+    public CruveSO_scr bulletCurve;
 
     void Update()
     {
@@ -36,9 +34,8 @@ public class bossShooting_scr : MonoBehaviour
             Vector2 positionToInstantiateTarget = this.transform.position;
             GameObject newBullet = Instantiate(basicBullet, new Vector2(positionToInstantiateTarget.x, positionToInstantiateTarget.y), Quaternion.identity);
             BasicBulletBoss_scr bulletScript = newBullet.GetComponent<BasicBulletBoss_scr>();
-            bulletScript.bulletSpeedMax = bulletSpeedMax;
-            bulletScript.bulletSpeedMin = bulletSpeedMin;
-            bulletScript.bulletSpeedCurve = bulletSpeedCurve;
+            bulletScript.bulletForwardCurve = bulletCurve.bulletForwardCurve;
+            bulletScript.bulletTime = bulletCurve.bulletTime;
             //Bullet vers le player
             bulletScript.dir = new Vector2(player.transform.position.x + Random.Range(-1f, 1f), player.transform.position.y + Random.Range(-1f, 1f)).normalized;
         }
@@ -48,21 +45,19 @@ public class bossShooting_scr : MonoBehaviour
             Vector2 positionToInstantiateTarget = this.transform.position;
             GameObject newBullet = Instantiate(basicBullet, new Vector2(positionToInstantiateTarget.x, positionToInstantiateTarget.y), Quaternion.identity);
             BasicBulletBoss_scr bulletScript = newBullet.GetComponent<BasicBulletBoss_scr>();
-            bulletScript.bulletSpeedMax = bulletSpeedMax;
-            bulletScript.bulletSpeedMin = bulletSpeedMin;
-            bulletScript.bulletSpeedCurve = bulletSpeedCurve;
+            bulletScript.bulletForwardCurve = bulletCurve.bulletForwardCurve;
+            bulletScript.bulletTime = bulletCurve.bulletTime;
             //Bullet direction random
             bulletScript.dir = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
         }
         for (int i = 0; i < bulletNumberBonus; i++)
         {
             //On instantie la bullet et on lui donne une direction
-            Vector2 positionToInstantiateRandom = this.transform.position;
-            GameObject newBullet = Instantiate(bonusBullet, new Vector2(positionToInstantiateRandom.x, positionToInstantiateRandom.y), Quaternion.identity);
-            BonusBulletBoss_scr bulletScript = newBullet.GetComponent<BonusBulletBoss_scr>();
-            bulletScript.bulletSpeedMax = bulletSpeedMax;
-            bulletScript.bulletSpeedMin = bulletSpeedMin;
-            bulletScript.bulletSpeedCurve = bulletSpeedCurve;
+            Vector2 positionToInstantiateTarget = this.transform.position;
+            GameObject newBullet = Instantiate(bonusBullet, new Vector2(positionToInstantiateTarget.x, positionToInstantiateTarget.y), Quaternion.identity);
+            BasicBulletBoss_scr bulletScript = newBullet.GetComponent<BasicBulletBoss_scr>();
+            bulletScript.bulletForwardCurve = bulletCurve.bulletForwardCurve;
+            bulletScript.bulletTime = bulletCurve.bulletTime;
             //Bullet direction random
             bulletScript.dir = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
         }

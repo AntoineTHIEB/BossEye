@@ -322,9 +322,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90f2c8906772a47bf80478c82db770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeedMax: 0
-  bulletSpeedMin: 0
-  bulletSpeedCurve:
+  isDamageBullet: 1
+  bulletTime: 0
+  bulletForwardCurve:
     serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
@@ -332,5 +332,4 @@ MonoBehaviour:
     m_RotationOrder: 4
   timeManager: {fileID: 0}
   timeManagerScr: {fileID: 0}
-  timeBeforeDestroyed: 3
   dir: {x: 0, y: 0}

@@ -319,36 +319,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 8002720185269812482}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b22fe29085a52046900a9797c7fc819, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b90f2c8906772a47bf80478c82db770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeedMax: 0
-  bulletSpeedMin: 0
-  bulletSpeedCurve:
+  isDamageBullet: 0
+  bulletTime: 0
+  bulletForwardCurve:
     serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.9996948
-      inSlope: -0.13316527
-      outSlope: -0.13316527
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.2323849
-    - serializedVersion: 3
-      time: 1
-      value: 0.19947052
-      inSlope: -1.3702581
-      outSlope: -1.3702581
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.19093072
-      outWeight: 0.33333334
+    m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   timeManager: {fileID: 0}
   timeManagerScr: {fileID: 0}
-  timeBeforeDestroyed: 3
   dir: {x: 0, y: 0}
