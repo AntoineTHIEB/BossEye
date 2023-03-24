@@ -136,6 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: 15
   dir: {x: 0, y: 0}
+  damage: 0
 --- !u!96 &2066035511368047455
 TrailRenderer:
   serializedVersion: 2
@@ -240,5 +241,5 @@ TrailRenderer:
     shadowBias: 0.5
     generateLightingData: 0
   m_MinVertexDistance: 0.1
-  m_Autodestruct: 1
+  m_Autodestruct: 0
   m_Emitting: 1
