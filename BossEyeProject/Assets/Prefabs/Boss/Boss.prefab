@@ -176,7 +176,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mySprite: {fileID: 3985534516915212388}
-  myColor: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1 &7694063443911845301
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,42 +344,8 @@ MonoBehaviour:
   bulletNumberTarget: 1
   bulletNumberRandom: 2
   bulletNumberBonus: 1
-  fireRateBoss: 2
-  bulletSpeedMax: 20
-  bulletSpeedMin: 6
-  bulletSpeedCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1.000061
-      inSlope: -0.014207464
-      outSlope: -0.014207464
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.45852706
-    - serializedVersion: 3
-      time: 0.37399697
-      value: 0.9929553
-      inSlope: -0.035863146
-      outSlope: -0.035863146
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.18200544
-      outWeight: 0.31508818
-    - serializedVersion: 3
-      time: 1
-      value: 0.3855896
-      inSlope: -0.4707987
-      outSlope: -0.4707987
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.21738079
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  fireRateBoss: 1
+  bulletCurve: {fileID: 11400000, guid: 8dddad78370a9624da778cd9be9230e9, type: 2}
 --- !u!114 &960756801103269348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,7 +402,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  maxBulletTarget: 3
+  maxBulletTarget: 2
   bulletNumberTargetCurve:
     serializedVersion: 2
     m_Curve:
@@ -462,7 +427,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  maxBulletRandom: 10
+  maxBulletRandom: 6
   bulletNumberRandomCurve:
     serializedVersion: 2
     m_Curve:
