@@ -786,6 +786,17 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 332797594}
+    - target: {fileID: 3761146738641666641, guid: bd82374ec8e4bfa48af93660df0657f1,
+        type: 3}
+      propertyPath: bulletCurve
+      value: 
+      objectReference: {fileID: 11400000, guid: 8dddad78370a9624da778cd9be9230e9,
+        type: 2}
+    - target: {fileID: 7694063443911845297, guid: bd82374ec8e4bfa48af93660df0657f1,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7694063443911845298, guid: bd82374ec8e4bfa48af93660df0657f1,
         type: 3}
       propertyPath: m_LocalPosition.x
